@@ -3,7 +3,7 @@ class CreateConsolas < ActiveRecord::Migration
     create_table :consolas do |t|
     	t.integer	:consola_id
     	t.string	:nombre_consola
-    	t.string	:descripcion_consola
+    	t.text		:descripcion_consola
 
       t.timestamps null: false
     end
