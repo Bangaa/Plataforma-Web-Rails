@@ -1,0 +1,29 @@
+<%= form_for(@consola) do |f| %>
+  <% if @consola.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@consola.errors.count, "error") %> prohibited this consola from being saved:</h2>
+
+      <ul>
+      <% @consola.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :consola_id %><br>
+    <%= f.number_field :consola_id %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_consola %><br>
+    <%= f.text_field :nombre_consola %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion_consola %><br>
+    <%= f.text_field :descripcion_consola %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

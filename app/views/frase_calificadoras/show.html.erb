@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Palcal:</strong>
+  <%= @frase_calificadora.palCal_id %>
+</p>
+
+<p>
+  <strong>Frase:</strong>
+  <%= @frase_calificadora.frase %>
+</p>
+
+<p>
+  <strong>Estado animo:</strong>
+  <%= @frase_calificadora.estado_animo %>
+</p>
+
+<%= link_to 'Edit', edit_frase_calificadora_path(@frase_calificadora) %> |
+<%= link_to 'Back', frase_calificadoras_path %>

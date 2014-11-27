@@ -1,0 +1,21 @@
+<%= form_for(@tiene_tuit_pal_clafe) do |f| %>
+  <% if @tiene_tuit_pal_clafe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tiene_tuit_pal_clafe.errors.count, "error") %> prohibited this tiene_tuit_pal_clafe from being saved:</h2>
+
+      <ul>
+      <% @tiene_tuit_pal_clafe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tuit_palClave_id %><br>
+    <%= f.number_field :tuit_palClave_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

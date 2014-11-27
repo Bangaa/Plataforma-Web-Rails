@@ -1,0 +1,29 @@
+<%= form_for(@frase_calificadora) do |f| %>
+  <% if @frase_calificadora.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@frase_calificadora.errors.count, "error") %> prohibited this frase_calificadora from being saved:</h2>
+
+      <ul>
+      <% @frase_calificadora.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :palCal_id %><br>
+    <%= f.number_field :palCal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :frase %><br>
+    <%= f.text_field :frase %>
+  </div>
+  <div class="field">
+    <%= f.label :estado_animo %><br>
+    <%= f.number_field :estado_animo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tiene Tuit Pal Cals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tw palcal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tiene_tuit_pal_cals.each do |tiene_tuit_pal_cal| %>
+      <tr>
+        <td><%= tiene_tuit_pal_cal.tw_palCal_id %></td>
+        <td><%= link_to 'Show', tiene_tuit_pal_cal %></td>
+        <td><%= link_to 'Edit', edit_tiene_tuit_pal_cal_path(tiene_tuit_pal_cal) %></td>
+        <td><%= link_to 'Destroy', tiene_tuit_pal_cal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tiene tuit pal cal', new_tiene_tuit_pal_cal_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estadistica:</strong>
+  <%= @estadistica.estadistica_id %>
+</p>
+
+<p>
+  <strong>Positivos:</strong>
+  <%= @estadistica.positivos %>
+</p>
+
+<p>
+  <strong>Negativos:</strong>
+  <%= @estadistica.negativos %>
+</p>
+
+<p>
+  <strong>Neutrales:</strong>
+  <%= @estadistica.neutrales %>
+</p>
+
+<p>
+  <strong>Suma total:</strong>
+  <%= @estadistica.suma_total %>
+</p>
+
+<%= link_to 'Edit', edit_estadistica_path(@estadistica) %> |
+<%= link_to 'Back', estadisticas_path %>

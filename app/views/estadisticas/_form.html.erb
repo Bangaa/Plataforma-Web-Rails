@@ -1,0 +1,37 @@
+<%= form_for(@estadistica) do |f| %>
+  <% if @estadistica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estadistica.errors.count, "error") %> prohibited this estadistica from being saved:</h2>
+
+      <ul>
+      <% @estadistica.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :estadistica_id %><br>
+    <%= f.number_field :estadistica_id %>
+  </div>
+  <div class="field">
+    <%= f.label :positivos %><br>
+    <%= f.number_field :positivos %>
+  </div>
+  <div class="field">
+    <%= f.label :negativos %><br>
+    <%= f.number_field :negativos %>
+  </div>
+  <div class="field">
+    <%= f.label :neutrales %><br>
+    <%= f.number_field :neutrales %>
+  </div>
+  <div class="field">
+    <%= f.label :suma_total %><br>
+    <%= f.number_field :suma_total %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

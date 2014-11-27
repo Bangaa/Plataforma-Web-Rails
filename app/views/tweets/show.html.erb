@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tweet:</strong>
+  <%= @tweet.tweet_id %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @tweet.fecha %>
+</p>
+
+<p>
+  <strong>Mensaje:</strong>
+  <%= @tweet.mensaje %>
+</p>
+
+<%= link_to 'Edit', edit_tweet_path(@tweet) %> |
+<%= link_to 'Back', tweets_path %>
