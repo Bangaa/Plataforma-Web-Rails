@@ -3,7 +3,7 @@ class CreateUsuarios < ActiveRecord::Migration
     create_table :usuarios do |t|
 	  t.integer	:usuario_id
 	  t.string	:user_name
-	  t.integet	:seguidores
+	  t.integer	:seguidores
 
       t.timestamps null: false
     end
