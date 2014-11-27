@@ -1,0 +1,8 @@
+<h1>Prueba BD</h1>
+
+<% @tweets.each do |element| %>
+  <tr>
+  <li><%= element.user.screen_name %></li>
+  <li><%= element.text %></li>
+  </tr>
+<% end %>

@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+
   def index
     require 'twitter'
   	client = Twitter::REST::Client.new do |config|
@@ -11,3 +12,4 @@ class WelcomeController < ApplicationController
   	@tweets = client.search(topics.join(","), :include_rts => false).take(3).collect
   end
 end
+
