@@ -3,11 +3,13 @@ class WelcomeController < ApplicationController
   def index
 	require 'twitter'
 	client = Twitter::REST::Client.new do |config|
-	  config.consumer_key        = "NCmCLNXwiFnhEAkfStE07aBap"
-	  config.consumer_secret     = "wal2HN2lM0in5ftpwEcT5v4mlSrvEoGVbNcj0VyswMcCGJvj8G"
-	  config.access_token        = "2770711470-dcYhvrC63vFtTrbd3FfYd96IkNhvcME8io4bhgF"
-	  config.access_token_secret = "DveuzCdXUYYhACB5s40xav0rNq5dic3GeXmKSeABouSvy"
+	  config.consumer_key        = ""
+	  config.consumer_secret     = ""
+	  config.access_token        = ""
+	  config.access_token_secret = ""
 	end
+
+	puts client.access_token
 
 	topics = []
 
