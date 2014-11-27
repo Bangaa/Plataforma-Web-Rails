@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Palcal</th>
+      <th>Frase calificadora</th>
       <th>Frase</th>
       <th>Estado animo</th>
       <th colspan="3"></th>
@@ -15,7 +15,7 @@
   <tbody>
     <% @frase_calificadoras.each do |frase_calificadora| %>
       <tr>
-        <td><%= frase_calificadora.palCal_id %></td>
+        <td><%= frase_calificadora.frase_calificadora_id %></td>
         <td><%= frase_calificadora.frase %></td>
         <td><%= frase_calificadora.estado_animo %></td>
         <td><%= link_to 'Show', frase_calificadora %></td>

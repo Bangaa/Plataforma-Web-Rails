@@ -69,6 +69,6 @@ class TieneTuitPalClavesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tiene_tuit_pal_clafe_params
-      params.require(:tiene_tuit_pal_clafe).permit(:tuit_palClave_id)
+      params.require(:tiene_tuit_pal_clafe).permit(:tiene_tuit_pal_clave_id)
     end
 end

@@ -18,7 +18,7 @@ class TieneTuitPalClavesControllerTest < ActionController::TestCase
 
   test "should create tiene_tuit_pal_clafe" do
     assert_difference('TieneTuitPalClave.count') do
-      post :create, tiene_tuit_pal_clafe: { tuit_palClave_id: @tiene_tuit_pal_clafe.tuit_palClave_id }
+      post :create, tiene_tuit_pal_clafe: { tiene_tuit_pal_clave_id: @tiene_tuit_pal_clafe.tiene_tuit_pal_clave_id }
     end
 
     assert_redirected_to tiene_tuit_pal_clafe_path(assigns(:tiene_tuit_pal_clafe))
@@ -35,7 +35,7 @@ class TieneTuitPalClavesControllerTest < ActionController::TestCase
   end
 
   test "should update tiene_tuit_pal_clafe" do
-    patch :update, id: @tiene_tuit_pal_clafe, tiene_tuit_pal_clafe: { tuit_palClave_id: @tiene_tuit_pal_clafe.tuit_palClave_id }
+    patch :update, id: @tiene_tuit_pal_clafe, tiene_tuit_pal_clafe: { tiene_tuit_pal_clave_id: @tiene_tuit_pal_clafe.tiene_tuit_pal_clave_id }
     assert_redirected_to tiene_tuit_pal_clafe_path(assigns(:tiene_tuit_pal_clafe))
   end
 

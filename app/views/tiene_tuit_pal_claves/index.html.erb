@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Tuit palclave</th>
+      <th>Tiene tuit pal clave</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,7 +13,7 @@
   <tbody>
     <% @tiene_tuit_pal_claves.each do |tiene_tuit_pal_clafe| %>
       <tr>
-        <td><%= tiene_tuit_pal_clafe.tuit_palClave_id %></td>
+        <td><%= tiene_tuit_pal_clafe.tiene_tuit_pal_clave_id %></td>
         <td><%= link_to 'Show', tiene_tuit_pal_clafe %></td>
         <td><%= link_to 'Edit', edit_tiene_tuit_pal_clafe_path(tiene_tuit_pal_clafe) %></td>
         <td><%= link_to 'Destroy', tiene_tuit_pal_clafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>

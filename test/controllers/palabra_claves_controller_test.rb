@@ -18,7 +18,7 @@ class PalabraClavesControllerTest < ActionController::TestCase
 
   test "should create palabra_clafe" do
     assert_difference('PalabraClave.count') do
-      post :create, palabra_clafe: { pal_clave_id: @palabra_clafe.pal_clave_id, palabra: @palabra_clafe.palabra }
+      post :create, palabra_clafe: { palabra: @palabra_clafe.palabra, palabra_clave_id: @palabra_clafe.palabra_clave_id }
     end
 
     assert_redirected_to palabra_clafe_path(assigns(:palabra_clafe))
@@ -35,7 +35,7 @@ class PalabraClavesControllerTest < ActionController::TestCase
   end
 
   test "should update palabra_clafe" do
-    patch :update, id: @palabra_clafe, palabra_clafe: { pal_clave_id: @palabra_clafe.pal_clave_id, palabra: @palabra_clafe.palabra }
+    patch :update, id: @palabra_clafe, palabra_clafe: { palabra: @palabra_clafe.palabra, palabra_clave_id: @palabra_clafe.palabra_clave_id }
     assert_redirected_to palabra_clafe_path(assigns(:palabra_clafe))
   end
 

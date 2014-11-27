@@ -2,10 +2,10 @@
 
 one:
   tweet_id: 1
-  fecha: 2014-11-27 03:42:35
-  mensaje: MyString
+  fecha: 2014-11-27 04:27:13
+  mensaje: MyText
 
 two:
   tweet_id: 1
-  fecha: 2014-11-27 03:42:35
-  mensaje: MyString
+  fecha: 2014-11-27 04:27:13
+  mensaje: MyText

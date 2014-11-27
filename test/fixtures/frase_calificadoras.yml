@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  palCal_id: 1
+  frase_calificadora_id: 1
   frase: MyString
   estado_animo: 1
 
 two:
-  palCal_id: 1
+  frase_calificadora_id: 1
   frase: MyString
   estado_animo: 1

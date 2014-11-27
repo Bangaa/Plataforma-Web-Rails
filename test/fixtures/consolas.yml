@@ -3,9 +3,9 @@
 one:
   consola_id: 1
   nombre_consola: MyString
-  descripcion_consola: MyString
+  descripcion_consola: MyText
 
 two:
   consola_id: 1
   nombre_consola: MyString
-  descripcion_consola: MyString
+  descripcion_consola: MyText

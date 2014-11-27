@@ -69,6 +69,6 @@ class PalabraClavesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def palabra_clafe_params
-      params.require(:palabra_clafe).permit(:pal_clave_id, :palabra)
+      params.require(:palabra_clafe).permit(:palabra_clave_id, :palabra)
     end
 end

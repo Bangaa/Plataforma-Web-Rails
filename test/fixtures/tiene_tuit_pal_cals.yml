@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tw_palCal_id: 1
+  tiene_tuit_pal_cal_id: 1
 
 two:
-  tw_palCal_id: 1
+  tiene_tuit_pal_cal_id: 1

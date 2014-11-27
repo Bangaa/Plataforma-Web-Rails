@@ -18,7 +18,7 @@ class FraseCalificadorasControllerTest < ActionController::TestCase
 
   test "should create frase_calificadora" do
     assert_difference('FraseCalificadora.count') do
-      post :create, frase_calificadora: { estado_animo: @frase_calificadora.estado_animo, frase: @frase_calificadora.frase, palCal_id: @frase_calificadora.palCal_id }
+      post :create, frase_calificadora: { estado_animo: @frase_calificadora.estado_animo, frase: @frase_calificadora.frase, frase_calificadora_id: @frase_calificadora.frase_calificadora_id }
     end
 
     assert_redirected_to frase_calificadora_path(assigns(:frase_calificadora))
@@ -35,7 +35,7 @@ class FraseCalificadorasControllerTest < ActionController::TestCase
   end
 
   test "should update frase_calificadora" do
-    patch :update, id: @frase_calificadora, frase_calificadora: { estado_animo: @frase_calificadora.estado_animo, frase: @frase_calificadora.frase, palCal_id: @frase_calificadora.palCal_id }
+    patch :update, id: @frase_calificadora, frase_calificadora: { estado_animo: @frase_calificadora.estado_animo, frase: @frase_calificadora.frase, frase_calificadora_id: @frase_calificadora.frase_calificadora_id }
     assert_redirected_to frase_calificadora_path(assigns(:frase_calificadora))
   end
 

@@ -69,6 +69,6 @@ class FraseCalificadorasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def frase_calificadora_params
-      params.require(:frase_calificadora).permit(:palCal_id, :frase, :estado_animo)
+      params.require(:frase_calificadora).permit(:frase_calificadora_id, :frase, :estado_animo)
     end
 end
