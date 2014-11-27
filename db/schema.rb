@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141127050649) do
   create_table "consolas", force: true do |t|
     t.integer  "consola_id"
     t.string   "nombre_consola"
-    t.string   "descripcion_consola"
+    t.text     "descripcion_consola"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
@@ -39,36 +39,36 @@ ActiveRecord::Schema.define(version: 20141127050649) do
   end
 
   create_table "frase_calificadoras", force: true do |t|
-    t.integer  "palCal_id"
+    t.integer  "frase_calificadora_id"
     t.string   "frase"
     t.integer  "estado_animo"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "palabra_claves", force: true do |t|
-    t.integer  "pal_clave_id"
+    t.integer  "palabra_clave_id"
     t.string   "palabra"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "tiene_tuit_pal_cals", force: true do |t|
-    t.integer  "tw_palCal_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "tiene_tuit_pal_cal_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "tiene_tuit_pal_claves", force: true do |t|
-    t.integer  "tuit_palClave_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.integer  "tiene_tuit_pal_clave_id"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "tweets", force: true do |t|
     t.integer  "tweet_id"
     t.datetime "fecha"
-    t.string   "mensaje"
+    t.text     "mensaje"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
