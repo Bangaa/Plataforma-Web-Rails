@@ -1,0 +1,2 @@
+class TieneTuitPalCalsController < ApplicationController
+end

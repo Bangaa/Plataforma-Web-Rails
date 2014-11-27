@@ -1,0 +1,2 @@
+class FraseCalificadorasController < ApplicationController
+end

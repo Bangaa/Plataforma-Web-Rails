@@ -1,0 +1,2 @@
+class PalabraClavesController < ApplicationController
+end
