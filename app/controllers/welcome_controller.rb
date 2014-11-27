@@ -31,11 +31,16 @@ class WelcomeController < ApplicationController
 	  texto = tweet.full_text
 	  fecha = tweet.created_at
 
-	  tuit = Tweet.new :id => id
+	  tuit = Tweet.new :tweet_id => id
 	  tuit.mensaje = texto
-	  tuit.fecha = fecha
-
+	  tuit.fecha = fecha 
 	  tuit.save
+
+	  user = Usuario.new
+	  user.usuario_id = tweet.user.id
+	  user.user_name = tweet.user.screen_name
+	  user.seguidores = tweet.user.followers_count
+	  user.save 
 	end
   end
 end
