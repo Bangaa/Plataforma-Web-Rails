@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PalabraClaveTest < ActiveSupport::TestCase
+class KeyWordTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
