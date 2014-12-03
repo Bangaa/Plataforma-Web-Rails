@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :key_words
+
   get 'welcome/index'
 
   resources :usuarios
