@@ -69,6 +69,6 @@ class ConsolasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def consola_params
-      params.require(:consola).permit(:consola_id, :nombre_consola, :descripcion_consola)
+      params.require(:consola).permit(:nombre_consola, :descripcion_consola)
     end
 end

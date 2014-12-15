@@ -18,7 +18,7 @@ class ConsolasControllerTest < ActionController::TestCase
 
   test "should create consola" do
     assert_difference('Consola.count') do
-      post :create, consola: { consola_id: @consola.consola_id, descripcion_consola: @consola.descripcion_consola, nombre_consola: @consola.nombre_consola }
+      post :create, consola: { descripcion_consola: @consola.descripcion_consola, nombre_consola: @consola.nombre_consola }
     end
 
     assert_redirected_to consola_path(assigns(:consola))
@@ -35,7 +35,7 @@ class ConsolasControllerTest < ActionController::TestCase
   end
 
   test "should update consola" do
-    patch :update, id: @consola, consola: { consola_id: @consola.consola_id, descripcion_consola: @consola.descripcion_consola, nombre_consola: @consola.nombre_consola }
+    patch :update, id: @consola, consola: { descripcion_consola: @consola.descripcion_consola, nombre_consola: @consola.nombre_consola }
     assert_redirected_to consola_path(assigns(:consola))
   end
 
